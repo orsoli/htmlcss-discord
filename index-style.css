@@ -18,33 +18,54 @@ footer{
     padding: var(--padd-lg) 0;
 }
 
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 /* utils */
 .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
+    width: 900px;
     margin: auto;
 }
 
-/* header  */
-.logo{
-    color: var(--primary-color);
-    border: var(--brd-solid);
-    margin: var(--marg-sm) 0;
-}
-
-nav{
-    color: var(--primary-color);
+.flex{
     display: flex;
-    justify-content: space-around;
-    flex-grow: 1;
 }
 
-.button{
-    color: var(--primary-color);
-    border: var(--brd-dashed);
+.border-btn{
+    border: 1px solid transparent;
+    border-radius: 20px;
 }
+
+/* header  */
+.header-navbar{
+    align-items: center;
+    padding: var(--padd-sm) 0;
+}
+
+.navbar-logo{
+    width: 20%;
+    
+}
+
+.navbar-menu{
+    flex-grow: 1;
+    justify-content: center;
+    gap: var(--gap-md);
+}
+
+.navbar-actions{
+    width: 20%;
+    text-align: end;
+}
+
+.accedi{
+    color: black;
+    background-color: var(--primary-color);
+    padding: 3px;
+}
+
 
 /* title container */
 .title-bg{
