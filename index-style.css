@@ -16,16 +16,18 @@ header{
 }
 
 footer{
-    display: flex;
-    flex-direction: column;
     background-color: var(--footer-color);
-    gap: var(--gap-md);
-    padding: var(--padd-lg) 0;
 }
 
 a{
     color: var(--primary-color);
     text-decoration: none;
+}
+
+section{
+    flex-basis: 30%;
+    padding: 20px;
+
 }
 
 /* utils */
@@ -106,46 +108,58 @@ a{
 }
 
 /* main */
-.card-bg{
-    background-color: var(--card-bg);
+.white-card-bg{
+    background-color: var(--primary-color);
+    min-height: 400px;
+    padding: var(--padd-lg) 0;
 }
 
-.card-bg>.card.container{
+.gray-card-bg{
+    background-color: rgb(237, 235, 235);
+    min-height: 400px;
+    padding: var(--padd-lg) 0;
+}
+
+.gray-card-bg>.card{
     flex-direction: row-reverse;
 }
 
-.card.container{
-    display: flex;
+
+
+.card{
     justify-content: center;
     align-items: flex-start;
-    gap: var(--gap-sm);
-    padding: var(--padd-sm) 0;
 }
 
-.img{
-    background-color: var(--img-bg);
-    flex-grow: 2;
-    min-height: var(--height);
-}
-
-.txt{
-    background-color: var(--txt-bg);
+.img-card{
     flex-grow: 1;
-    min-height: var(--height);
+    height: 300px;
+}
+
+section h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section p{
+    font-size: 16px;
+}
+
+.app-card{
+    text-align: center;
+}
+
+.app .img-card{
+    min-height: 500px;
+}
+
+.app-card>h2{
+    margin: var(--marg-md) auto;
+}
+
+.app-card>a{
+    background-color: aqua;
+    padding-left: 10px;
 }
 
 /* footer  */
-.column{
-    background-color: var(--ftr-clmn);
-    border: var(--brd-dashed);
-    flex-grow: 1;
-    min-height: var(--height);
-}
-
-.column.contact{
-    flex-grow: 2;
-}
-
-.hr{
-    border: 1px solid var(--primary-color);
-}
