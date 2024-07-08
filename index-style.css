@@ -6,7 +6,12 @@
 }
 
 /* Generics */
+body{
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 header{
+    color: var(--primary-color);
     background-color: var(--header-color);
 }
 
@@ -36,10 +41,12 @@ a{
 .border-btn{
     border: 1px solid transparent;
     border-radius: 20px;
+    padding: 10px 20px;
 }
 
 /* header  */
 .header-navbar{
+    font-size: 12px;
     align-items: center;
     padding: var(--padd-sm) 0;
 }
@@ -63,23 +70,39 @@ a{
 .accedi{
     color: black;
     background-color: var(--primary-color);
-    padding: 3px;
 }
 
 
 /* title container */
 .title-bg{
-    display: flex;
-    justify-content: center;
-    background-color: var(--titl-bg);
+    background-image: url("./img/jumbo.png");
+    background-size: cover;
+    min-height: 400px;
+    padding-top: var(--padd-lg);
 }
 
-.title.container{
-    background-color: var(--titl-cont);
-    min-height: var(--height);
-    max-width: 50%;
-    margin: var(--marg-md) auto;
+.header-title{
+    width: 650px;
+    text-align: center;
+    vertical-align: middle;
+}
 
+.header-title *{
+    margin: var(--marg-md);
+}
+
+.header-title h1{
+    font-size: 40px;
+}
+
+.download-app{
+    color: black;
+    background-color: var(--primary-color);
+    padding-left: 0;
+}
+
+.browser-app{
+    background-color: black;
 }
 
 /* main */
@@ -109,12 +132,6 @@ a{
     background-color: var(--txt-bg);
     flex-grow: 1;
     min-height: var(--height);
-}
-
-.download-app{
-    background-color: var(--app-bg);
-    width: 100%;
-    min-height: var(--app-height);
 }
 
 /* footer  */
