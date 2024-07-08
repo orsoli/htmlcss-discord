@@ -1,62 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <meta name="author" content="Orsol Filaj">
-    <link rel="stylesheet" href="utils.css">
-    <link rel="stylesheet" href="index-style.css">
-    <title>Discord</title>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">logo</div>
-            <nav>link  link  link</nav>
-            <div class="button">accedi</div>
-        </div>
-        <div class="title-bg">
-            <div class="title container"></div>
-        </div>
-    </header>
-    <main>
-        <div class="primary-bg">
-            <div class="card container">
-                <div class="img"></div>
-                <div class="txt"></div>
-            </div>
-        </div>
-        <div class="card-bg">
-            <div class="card container">
-                <div class="img"></div>
-                <div class="txt"></div>
-            </div>
-        </div>
-        <div class="primary-bg">
-            <div class="card container">
-                <div class="img"></div>
-                <div class="txt"></div>
-            </div>
-        </div>
-        <div class="card-bg">
-            <div class="card container">
-                <div class="download-app"></div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="container">
-            <div class="column contact"></div>
-            <div class="column prodotto"></div>
-            <div class="column compania"></div>
-            <div class="column risorse"></div>
-            <div class="column nome"></div>
-        </div>
-        <div class="hr container"></div>
-        <div class="container">
-            <div class="logo">logo</div>
-            <div class="button">Register</div>
-        </div>
-    </footer>
-</body>
-</html>
+/* reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generics */
+header{
+    background-color: var(--header-color);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--footer-color);
+    gap: var(--gap-md);
+    padding: var(--padd-lg) 0;
+}
+
+/* utils */
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+/* header  */
+.logo{
+    color: var(--primary-color);
+    border: var(--brd-solid);
+    margin: var(--marg-sm) 0;
+}
+
+nav{
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.button{
+    color: var(--primary-color);
+    border: var(--brd-dashed);
+}
+
+/* title container */
+.title-bg{
+    display: flex;
+    justify-content: center;
+    background-color: var(--titl-bg);
+}
+
+.title.container{
+    background-color: var(--titl-cont);
+    min-height: var(--height);
+    max-width: 50%;
+    margin: var(--marg-md) auto;
+
+}
+
+/* main */
+.card-bg{
+    background-color: var(--card-bg);
+}
+
+.card-bg>.card.container{
+    flex-direction: row-reverse;
+}
+
+.card.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--gap-sm);
+    padding: var(--padd-sm) 0;
+}
+
+.img{
+    background-color: var(--img-bg);
+    flex-grow: 2;
+    min-height: var(--height);
+}
+
+.txt{
+    background-color: var(--txt-bg);
+    flex-grow: 1;
+    min-height: var(--height);
+}
+
+.download-app{
+    background-color: var(--app-bg);
+    width: 100%;
+    min-height: var(--app-height);
+}
+
+/* footer  */
+.column{
+    background-color: var(--ftr-clmn);
+    border: var(--brd-dashed);
+    flex-grow: 1;
+    min-height: var(--height);
+}
+
+.column.contact{
+    flex-grow: 2;
+}
+
+.hr{
+    border: 1px solid var(--primary-color);
+}
