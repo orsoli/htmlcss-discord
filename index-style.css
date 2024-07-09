@@ -17,6 +17,7 @@ header{
 
 footer{
     background-color: var(--footer-color);
+    min-height: 500px;
 }
 
 a{
@@ -33,6 +34,13 @@ span{
     margin-left: 10px;
 }
 
+select{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+}
+
 /* utils */
 .container{
     width: 900px;
@@ -41,6 +49,10 @@ span{
 
 .flex{
     display: flex;
+}
+
+.border{
+    border: 1px solid;
 }
 
 .border-btn{
@@ -166,4 +178,44 @@ section p{
 }
 
 /* footer  */
+.footer-top{
+
+}
+
+.footer-social{
+    color: #577ee1;
+}
+
+.flag-lang{
+    height: 16px;
+}
+
+.languages{
+    margin: var(--marg-md) 0;
+}
+
+.social-media{
+    gap: var(--gap-md);
+}
+
+.footer-logobar{
+    align-items: center;
+    justify-content: space-between;
+    margin: var(--marg-md) auto;
+
+}
+
+.hr{
+    border-color: white;
+}
+
+.register{
+    font-size: 12px;
+    background-color: #577ee1;
+}
+
+.prodotto{
+    color: var(--primary-color);
+    flex-direction: column;
+}
 
